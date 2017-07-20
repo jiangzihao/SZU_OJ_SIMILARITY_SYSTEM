@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "extends": "standard",
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "plugins": [
+        "no-async-without-await"
+    ],
+    "rules": {
+        // allow paren-less arrow functions
+        "arrow-parens": 0,
+        // allow not to add a space after "function"
+        "space-before-function-paren": 0,
+        // 允许中文空格
+        "no-irregular-whitespace": 0,
+        "no-async-without-await/no-async-without-await": 2
+    }
+}

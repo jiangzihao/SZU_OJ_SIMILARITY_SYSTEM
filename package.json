@@ -1,0 +1,34 @@
+{
+  "name": "szu_oj_similarity_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangzihao/SZU_OJ_SIMILARITY_SYSTEM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiangzihao/SZU_OJ_SIMILARITY_SYSTEM/issues"
+  },
+  "homepage": "https://github.com/jiangzihao/SZU_OJ_SIMILARITY_SYSTEM#readme",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.8",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1",
+    "log4js": "^2.2.0",
+    "pad-left": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-no-async-without-await": "^1.2.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
