@@ -3,7 +3,7 @@
 const fs = require('fs')
 const pad = require('pad-left')
 const path = require('path')
-const config = require('config')
+const config = require('../config')
 const log4js = require('log4js')
 
 const logsDir = path.parse(config.log).dir
@@ -12,13 +12,17 @@ if (!fs.existsSync(logsDir)) {
 }
 
 log4js.configure({
-  appenders: [
-    { type: 'console' },
-    { type: 'dateFile', filename: config.log, pattern: '-yyyy-MM-dd' }
-  ]
+  appenders: {
+    console: { type: 'console' },
+    dateFile: { type: 'dateFile', filename: config.log, pattern: '-yyyy-MM-dd' }
+  },
+  categories: {
+    default: { appenders: [ 'console' ], level: 'debug' },
+    info: { appenders: [ 'dateFile' ], level: 'info' }
+  }
 })
 
-const logger = log4js.getDefaultLogger()
+const logger = log4js.getLogger()
 
 const loggerMiddleware = async (ctx, next) => {
   const start = new Date()

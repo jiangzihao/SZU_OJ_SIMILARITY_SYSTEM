@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/jiangzihao/SZU_OJ_SIMILARITY_SYSTEM#readme",
   "dependencies": {
-    "koa": "^2.0.0-alpha.8",
+    "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.2.1",
-    "log4js": "^2.2.0",
-    "pad-left": "^2.1.0"
+    "log4js": "^2.3.3",
+    "pad-left": "^2.1.0",
+    "promise-mysql": "^3.0.2",
+    "string-similarity": "^1.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",

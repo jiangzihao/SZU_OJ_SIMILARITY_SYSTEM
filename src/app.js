@@ -8,9 +8,11 @@ const { responseHandler, errorHandler } = require('./lib/response')
 const app = new KOA()
 const router = require('./routes').prefix('/api')
 
+require('./lib/db')
+
 app.use(loggerMiddleware)
 app.use(errorHandler)
-app.use(bodyParser)
+app.use(bodyParser())
 app.use(router.routes())
 app.use(responseHandler)
 
