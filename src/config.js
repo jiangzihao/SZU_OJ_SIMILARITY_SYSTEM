@@ -5,10 +5,10 @@ const path = require('path')
 module.exports = {
   mysql: {
     conn: {
-      host: '172.31.234.13',
+      host: 'localhost',
       database: 'jol',
-      user: 'oj',
-      password: 'ojtest',
+      user: '',
+      password: '',
       connectionLimit: 10
     },
     tables: {
